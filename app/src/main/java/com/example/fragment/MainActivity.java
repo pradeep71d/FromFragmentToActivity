@@ -31,7 +31,7 @@ Button button;
                 FragmentManager fragmentManager=getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
                 firstFragment.setArguments(bundle);
-                fragmentTransaction.add(R.id.f1,firstFragment);
+                fragmentTransaction.replace(R.id.f1,firstFragment);
                 fragmentTransaction.commit();
             }
         });
